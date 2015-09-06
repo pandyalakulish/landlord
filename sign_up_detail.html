@@ -1,0 +1,112 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	
+</head>
+<body>
+	<a href="index.html">Back to Homepage</a>
+
+	<div id="container1">
+		<p class="member">New members register here</p>
+		<form  action="http://formspree.io/dummy@gmail.com" method="post">
+			<label class="number1">First Name :<input type="text" name="firstname"></label>
+			<br>
+			<label class="number2"> Last Name: <input type="text" name="lastname"></label>
+			<br>
+			<label class="number3">Email: <input type="email" name="userEmail" placeholder="hello@gmail.com"><lable>
+			<br>
+			<label>Create your password:<input type="password" name="pswd"></label>
+			<br>
+			<label>Confirm your password:<input type="password" name="pswd"><lable>
+			<br>
+			<label>Less than 18 years old :<input type="radio" name="age" value="less_than_18" checked=""></label>
+			<br>
+			<label>More than 18 years old :<input type="radio" name="age" value="more_than_18" checked=""></label>
+			<br>
+			<label>Languages Known:</label>
+			<br>
+			<label>English <input type="checkbox" name="english" value="english"></label>
+			<br>
+			<label>French <input type="checkbox" name="french" value="french"></label>
+			<br>
+			<label>Where are you from?
+			<select name="country">
+				<option value="usa">U.S.A</option>
+				<option value="canada">Canada</option>
+				<option value="other_country">Other Country</option>
+			</select>
+			</label>
+			<br>
+			<label>More info of you:<textarea name="user_message" ></textarea></label>
+			<br>
+			<button onclick="myFunction()" afterClick="myClick">Submit</button>
+		</form>
+	</div>
+	<div class= "container">
+		<div class="page-header" id="header2">
+			<h1>Contact Us</h1>
+		</div>
+		<form action="http://formspree.io/dummy@gmail.com" method= "POST">
+			<label>
+				"User Email"
+				<input type="email" name"userEmail" placeholder="hello@test.com">
+			<label>
+				<div id="hello">
+					Say hi!
+				<textarea name="user message" rows="5" cols="35"></textarea>
+				<button type"button" class="btn btn-info">Submit</button>
+				</div>
+			</label>
+		</form>
+		<hr>
+		<div class="row" id="introduction1">
+			<div class="col-md-6" id="robin">Robin</div>
+			<div class="col-md-6" id="lakulish">Lakulish</div>
+		</div>
+		<div class="row"id="introduction2">
+			<div class="col-md-6" id="umar">Umar</div>
+			<div class="col-md-6" id="mary">Mary</div>
+			
+		</div>
+		<hr>
+		<div id="img1">
+		</div>
+	<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+	<script>
+	
+
+	
+	$('form').css('color', 'blue');
+	$('form').css('font-size', '1em');
+	$('.member').css('color', 'tomato');
+	$('.member').css('font-size', '1.5em');
+	
+	function myFunction() {
+	 	var	submit = prompt("Do you sure want to submit?");
+	}
+	function myClick() {
+		 	var	click = alert("Your form has been submitted");
+		}
+
+	$("#header2").css("color", "deepskyblue");
+		$("#header2").css("background-color", "aliceblue");
+		$("#header2").css("text-align", "center");
+		$("hello").css("color", "blue");
+		$("img1").append("src", "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Jefferson_Apartment_Building_Jun_09.JPG/500px-Jefferson_Apartment_Building_Jun_09.JPG")//This is not loading. Syntax error?
+		$("robin").text("");
+        $("lakulish").text("");
+        $("umar").text("");
+        $("mary").text("");
+
+	
+
+
+
+
+
+	</script>
+
+</body>
+</html>

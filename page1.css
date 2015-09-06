@@ -1,0 +1,32 @@
+header{
+	background-color: steelblue;
+	color: snow;
+	text-align: center;
+	padding-top: 10px;
+	margin-left: -20px;
+	margin-right: -20px;
+}
+header h1{
+	font-weight: bold;
+}
+header h6{
+	font-style: italic;
+}
+.end_tag{
+	color: steelblue;
+	text-align: center;
+	font-size: 75%;
+	font-style: italic;
+}
+
+ /*form * {
+	margin: 3px;
+}
+
+input:hover, textarea:hover, option:focus {
+	border: 3px solid green;
+}
+
+input:focus, textarea:focus, option:focus  {
+	border: 3px solid red;
+} */
